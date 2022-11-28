@@ -1,0 +1,93 @@
+SORU1 
+
+JavaScript diğer birçok dilden farklı olarak null ve undefined iki ayrı durum olarak kabul eder. Null; boş değer anlamına gelen özel bir değerdir. Typeof null bize nesne döndürür. Undefined değişken bildirilmiş ama henüz değeri atanmamış demektir.Atanmamış değişkenlerin değeri JavaScript tarafında otomatik olarak undefined olarak atanır. JavaScript asla null değeri atamaz. Eğer bir elemanın değeri null ise bu JavaScript tarafından değil, program tarafından atanmış demektir. 
+
+Soru 2 
+
+İstemcide sunucudan birtakım verileri, listeleri çekip göstermek istediğimizde veya bir kayıt oluşturma, bir sipariş verme, Tamam düğmesine bastığımızda kullanılan iletişim yöntemidir. İki kısımdan oluşur, Request(istek) ve bunun Response (Cevap) tan oluşur. 
+
+CONNECT metodu hedefteki kaynak tarafından tanımlanan sunucuya bir tünel oluşturur. 
+
+OPTIONS metodu hedefteki kaynağın iletişim seçeneklerini anlamak için kullanılır. (CORS olduğunda diğer domain o fiil var mı şeklinde sorar) 
+
+HEAD metodu GET isteği ile tamamen aynı olan sadece gövdesi olmayan bir yanıt ister. 
+
+TRACE metodu hedefteki kaynağa giden yol boyunca bir mesaj loop-back testi gerçekleştirir. 
+
+GET metodu belirtilen kaynağın bir temsilini ister. GET kullanan istekler yalnızca veri almalıdır. 
+
+POST metodu belirtilen kaynağa bir varlık (entity) göndermek için kullanılır, bu da genellikle sunucuda bir durum değişikliği ya da yan etkilere neden olur. 
+
+PUT metodu hedefte bulunan kaynağın tüm geçerli temsillerinin yerine istek yükünü (request payload) koyar. 
+
+DELETE metodu belirtilen kaynağı siler. 
+
+PATCH metodu bir kaynağa kısmi değişiklikler uygulamak için kullanılır. 
+
+Reponse içerisinde gelen Status Code bakarsak; 
+
+Informational responses (100–199): 
+
+Successful responses (200–299): 200 OK. … 
+
+Redirects (300–399): 301 — Permanent Redirect. 302 — Temporary Redirect, …, 
+
+Client errors (400–499): 404 — Not Found, 410 — Gone, … 
+
+Server errors (500–599):500 — Internal Server Error, 503 — Service Unavailable,… 
+
+En Yaygın Kullanılan HTTP durum kodları: 
+
+200 Başarılı yanıt 
+
+301 Kalıcı yönlendirme 
+
+302 Geçici yönlendirme 
+
+404 Sayfa bulunamadı hatası 
+
+410 Sayfa silindi 
+
+500 Sunucu hatası 
+
+ 
+
+Soru3 
+
+TypeScript’deki interface, temelinde bir tip tanımından başka birşey değildir. class ve function‘lar nesnelerin davranışlarını tanımlarken, interface‘ler nesnelerin tiplerini tanımlar şeklinde düşünebiliriz. Javascript’de interface kavramı olmadığı için TypeScript’de bir interface tanımladığınız ve compile ettiğiniz zaman, onun bir Javascript kodu üretmediğini görürsünüz. 
+
+Soru 4: 
+
+Nesne yönelimli programlamada, class (sınıf) bir özellik ve yöntem koleksiyonunu tanımlayan bir yapıdır. Nesneler ise bir sınıfın örnekleridir.Sınıfın tanımladığı ortak yapıyı paylaşırlar.  
+
+Karşılaştırma  
+
+ 
+
+Tanım: Class,tek bir birimdeki veri bağlama üyelerinin ve ilişkili yöntemlerin mekanizmasıdır 
+
+Object: Class örneği veya class değişkeni.  
+
+Class: mantıklı bir varlıktır Object: Bu fiziksel varlıktır  
+
+Class Hafıza Tahsisi: Hafıza alanı oluşturulduğunda tahsis edilmez. Object:Hafıza alanı oluşturulduğunda tahsis edilir.  
+
+Bildirimi / tanımlanması: Class bir kez yaratılır. Object istenilen kadar çok zaman yaratılır.  
+
+Soru 5 
+
+Inversion of control bir yazılım tasarım prensibidir. Ioc ile Uygulama içerisindeki obje instance’larının yönetimi sağlanarak, bağımlılıklarını en aza indirgemek amaçlanmaktadır. Projeniz deki bağımlılıkların oluşturulmasını ve yönetilmesini geliştiricinin yerine, framework’ün yapması olarak da açıklanabilir. Framework‘in üzerinde çalıştığımız da görülüyor ki; frameworkler birçok işi kendisi yapmakta ve bizim kodumuzu çalıştırmak için framework gerekli kaynakları ve çalışması gereken metotları oluşturup, yönetmektedir. Yazdığımız kod bloğu çalışacağı zaman, framework bizim kodumuzu çağırır ve çalıştırır daha sonra kontrol yeniden framework’e geçmesi olayının tümüne Inversion Of Control adı verilmektedir. 
+
+IoC kullanmanın avantajlarını şöyle sıralayabiliriz: ,  
+
+* Loosely coupled (bağımlılığı az) sınıflar oluşturma  
+
+* Kolay unit test yazma  
+
+* Yönetilebilirlik  
+
+* Modüler programlar  
+
+* Farklı implementasyonlar arası kolay geçiş 
+
+Dependency injection kaba tabir ile bir sınıfın/nesnenin bağımlılıklardan kurtulmasını amaçlayan ve o nesneyi olabildiğince bağımsızlaştıran bir programlama tekniği/prensibidir. Dependency Injection uygulayarak; bir sınıfının bağımlı olduğu nesneden bağımsız hareket edebilmesini sağlayabilir ve kod üzerinde olası geliştirmelere karşın değişiklik yapma ihtiyacını ortadan kaldırabilirsiniz. 
